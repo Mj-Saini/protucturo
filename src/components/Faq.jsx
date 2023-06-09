@@ -35,7 +35,7 @@ function Faq() {
                 <div className="mt-sm-5 mt-4">
                   <Accordion
                     className="Faq_accordion d-flex flex-column gap-4"
-                    defaultActiveKey=""
+                    defaultActiveKey="0"
                     flush
                   >
                     <Accordion.Item

@@ -91,6 +91,14 @@
   box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
+.slider_red_card {
+  width: 209px;
+  height: 186px;
+  background: linear-gradient(44.01deg, #d41700 -6.45%, #7f0011 136.55%);
+
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
 .slider_red_cards:hover {
   background: linear-gradient(44.01deg, #d41700 -6.45%, #7f0011 136.55%);
 }

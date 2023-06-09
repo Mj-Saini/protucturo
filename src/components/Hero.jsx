@@ -7,12 +7,10 @@ import vector from "../assets/img/svg/header-vector.svg";
 import vector2 from "../assets/img/svg/header-vector2.svg";
 
 function Hero() {
-  const [active, setActive] = useState("one");
-  const slideData = [
-    { id: 1, content: "Slide 1" },
-    { id: 2, content: "Slide 2" },
-    { id: 3, content: "Slide 3" },
-  ];
+  const [activeSlide, setActiveSlide] = useState(0);
+  const onActive = (e) => {
+    setActiveSlide(e);
+  };
 
   const settingSlide = {
     dots: true,
@@ -31,6 +29,7 @@ function Hero() {
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
+    beforeChange: (current, next) => setActiveSlide(next),
     responsive: [
       {
         breakpoint: 1400,
@@ -257,7 +256,12 @@ function Hero() {
               {...settings}
             >
               <div className="d-flex justify-content-center justify-content-lg-start d-flex justify-content-center bg-transparent justify-content-lg-start ">
-                <div className="slider_red_cards px-4 py-4 position-relative">
+                <div
+                  className={`d-flex flex-column text-centerpx-4 position-relative py-4 px-4 slider_red_cards ${
+                    activeSlide === 0 ? "slider_red_card" : "slider_red_cards"
+                  }`}
+                  onClick={() => onActive(0)}
+                >
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
                     className=" ff_gilroy-semibold fs_2xl text-white"
@@ -272,7 +276,12 @@ function Hero() {
                 </div>
               </div>
               <div className="d-flex justify-content-center justify-content-lg-start">
-                <div className="slider_red_cards px-4 py-4 position-relative">
+                <div
+                  className={`d-flex flex-column text-centerpx-4 position-relative py-4 px-4 slider_red_cards ${
+                    activeSlide === 1 ? "slider_red_card" : "slider_red_cards"
+                  }`}
+                  onClick={() => onActive(1)}
+                >
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
                     className=" ff_gilroy-semibold fs_2xl text-white"
@@ -287,7 +296,13 @@ function Hero() {
                 </div>
               </div>
               <div className="d-flex justify-content-center justify-content-lg-start">
-                <div className="slider_red_cards px-4 py-4 position-relative">
+                <div
+                  className={`d-flex flex-column text-centerpx-4 position-relative py-4 px-4 slider_red_cards ${
+                    activeSlide === 2 ? "slider_red_card" : "slider_red_cards"
+                  }`}
+                  onClick={() => onActive(2)}
+                >
+                  {" "}
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
                     className=" ff_gilroy-semibold fs_2xl text-white"
@@ -302,7 +317,13 @@ function Hero() {
                 </div>
               </div>
               <div className="d-flex justify-content-center justify-content-lg-start">
-                <div className="slider_red_cards px-4 py-4 position-relative">
+                <div
+                  className={`d-flex flex-column text-centerpx-4 position-relative py-4 px-4 slider_red_cards ${
+                    activeSlide === 3 ? "slider_red_card" : "slider_red_cards"
+                  }`}
+                  onClick={() => onActive(3)}
+                >
+                  {" "}
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
                     className=" ff_gilroy-semibold fs_2xl text-white"
@@ -317,7 +338,13 @@ function Hero() {
                 </div>
               </div>
               <div className="d-flex justify-content-center justify-content-lg-start">
-                <div className="slider_red_cards px-4 py-4 position-relative">
+                <div
+                  className={`d-flex flex-column text-centerpx-4 position-relative py-4 px-4 slider_red_cards ${
+                    activeSlide === 4 ? "slider_red_card" : "slider_red_cards"
+                  }`}
+                  onClick={() => onActive(4)}
+                >
+                  {" "}
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
                     className=" ff_gilroy-semibold fs_2xl text-white"
@@ -332,7 +359,13 @@ function Hero() {
                 </div>
               </div>
               <div className="d-flex justify-content-center justify-content-lg-start">
-                <div className="slider_red_cards px-4 py-4 position-relative">
+                <div
+                  className={`d-flex flex-column text-centerpx-4 position-relative py-4 px-4 slider_red_cards ${
+                    activeSlide === 5 ? "slider_red_card" : "slider_red_cards"
+                  }`}
+                  onClick={() => onActive(5)}
+                >
+                  {" "}
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
                     className=" ff_gilroy-semibold fs_2xl text-white"
@@ -347,7 +380,13 @@ function Hero() {
                 </div>
               </div>
               <div className="d-flex justify-content-center justify-content-lg-start">
-                <div className="slider_red_cards px-4 py-4 position-relative">
+                <div
+                  className={`d-flex flex-column text-centerpx-4 position-relative py-4 px-4 slider_red_cards ${
+                    activeSlide === 6 ? "slider_red_card" : "slider_red_cards"
+                  }`}
+                  onClick={() => onActive(6)}
+                >
+                  {" "}
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
                     className=" ff_gilroy-semibold fs_2xl text-white"
@@ -362,7 +401,13 @@ function Hero() {
                 </div>
               </div>
               <div className="d-flex justify-content-center justify-content-lg-start">
-                <div className="slider_red_cards px-4 py-4 position-relative">
+                <div
+                  className={`d-flex flex-column text-centerpx-4 position-relative py-4 px-4 slider_red_cards ${
+                    activeSlide === 7 ? "slider_red_card" : "slider_red_cards"
+                  }`}
+                  onClick={() => onActive(7)}
+                >
+                  {" "}
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
                     className=" ff_gilroy-semibold fs_2xl text-white"
