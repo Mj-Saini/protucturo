@@ -6,7 +6,14 @@ function YouGo() {
     <>
       <section className="py-5">
         <div className="container z_index1 position-relative">
-          <div className="red_box py-5 px-4 d-flex flex-column align-items-center position-relative overflow-hidden z_index0">
+          <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="1000"
+            data-aos-duration="2000"
+            data-aos-offset="200"
+            className="red_box py-5 px-4 d-flex flex-column align-items-center position-relative overflow-hidden z_index0"
+          >
             <img
               className="position-absolute w-100 h-100 top-0 z_index0"
               src={vector}

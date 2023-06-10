@@ -17,12 +17,19 @@ function SecureData() {
 
         <div className="container z_index2 position-relative">
           <div>
-            <div className="col-xl-8 col-lg-10 mx-auto ">
+            <div
+              data-aos="fade-dowm"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              data-aos-offset="100"
+              className="col-xl-8 col-lg-10 mx-auto "
+            >
               {" "}
-              <h3 className="text_gradient_red text-center">
+              <h3 className="text_gradient_red text-start text-sm-center">
                 Our products
               </h3>{" "}
-              <h2 className=" ff_gilroy_bold fw-bold text_light_gray fs_6x5l text-center pb-md-4 mb-0 mt-2">
+              <h2 className=" ff_gilroy_bold fw-bold text_light_gray fs_6x5l text-start text-sm-center pb-md-4 mb-0 mt-2">
                 Allow us to secure your data{" "}
                 <span className="d-xxl-block">with Protecturo’s products </span>
               </h2>
@@ -32,8 +39,15 @@ function SecureData() {
                 {" "}
                 <div className="row mt-sm-4 justify-content-center">
                   <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                    <div className="p-xxl-5 p-4 bg_black text-center  d-flex flex-column justify-content-end h-100">
-                      <div className=" d-flex justify-content-center">
+                    <div
+                      data-aos="flip-right"
+                      data-aos-easing="ease-in-out"
+                      data-aos-delay="300"
+                      data-aos-duration="1500"
+                      data-aos-offset="100"
+                      className="p-xxl-5 p-4 bg_black text-center d-flex flex-column justify-content-end h-100"
+                    >
+                      <div className="d-flex justify-content-center">
                         <img className="img_esim" src={qrCode} alt="" />
                       </div>{" "}
                       <h4 className="mt-md-4 mt-2 ff_gilroy-semibold fs_2x4l text_white_gray text-center">
@@ -49,7 +63,14 @@ function SecureData() {
                     </div>
                   </div>
                   <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                    <div className="p-xxl-5 p-4 bg_black text-center text-center d-flex flex-column justify-content-end h-100">
+                    <div
+                      data-aos="flip-right"
+                      data-aos-easing="ease-in-out"
+                      data-aos-delay="300"
+                      data-aos-duration="1500"
+                      data-aos-offset="100"
+                      className="p-xxl-5 p-4 bg_black text-center text-center d-flex flex-column justify-content-end h-100"
+                    >
                       <div className=" d-flex justify-content-center">
                         <img className="img_esim" src={eSIM} alt="" />
                       </div>{" "}
@@ -66,7 +87,14 @@ function SecureData() {
                     </div>
                   </div>
                   <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                    <div className="p-xxl-5 p-4 d-flex flex-column justify-content-end bg_black text-center h-100">
+                    <div
+                      data-aos="flip-right"
+                      data-aos-easing="ease-in-out"
+                      data-aos-delay="300"
+                      data-aos-duration="1500"
+                      data-aos-offset="100"
+                      className="p-xxl-5 p-4 d-flex flex-column justify-content-end bg_black text-center h-100"
+                    >
                       <img className="img_esim" src={wifi} alt="" />
 
                       <h4 className="mt-md-4 mt-2 ff_gilroy-semibold fs_2x4l text_white_gray text-center">

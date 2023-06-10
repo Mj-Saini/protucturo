@@ -21,7 +21,14 @@ function Connect() {
             />
             <div className="row px-xxl-4 mt-4">
               <div className="col-xl-7 col-lg-6">
-                <div className="pb-4 py-md-4 pe-xl-4">
+                <div
+                  data-aos="fade-right"
+                  data-aos-easing="ease-in-out"
+                  data-aos-delay="300"
+                  data-aos-duration="1000"
+                  data-aos-offset="100"
+                  className="pb-4 py-md-4 pe-xl-4"
+                >
                   <h2 className="common_heading mb-0 pe-xl-5 mt-4 mt-lg-0">
                     Instant connectivity with the Protecturo app
                   </h2>
@@ -38,20 +45,22 @@ function Connect() {
                   </p>
                   <div className="d-flex justify-content-center justify-content-md-start gap-3 gap-md-4 mt-xl-5 mt-4  ">
                     {" "}
-                    <a href="#">
+                    <span className="cursor_pointer">
+                      {"  "}
                       <img
-                        className="d-inline-block w_costom transition_300 cursor_pointer"
+                        className="d-inline-block w_costom transition_300 "
                         src={playStore}
                         alt="img"
                       />
-                    </a>
-                    <a href="#">
+                    </span>
+                    <span className="cursor_pointer">
+                      {" "}
                       <img
                         className="d-inline-block w_costom transition_300 cursor_pointer"
                         src={appStore}
                         alt="img"
                       />
-                    </a>
+                    </span>
                   </div>
                 </div>
               </div>

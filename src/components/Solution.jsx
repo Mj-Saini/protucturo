@@ -16,7 +16,14 @@ function Solution() {
             />
             <div className="row">
               <div className="col-xl-8 col-lg-7">
-                <div className="pb-4 py-md-4  pe-xl-5">
+                <div
+                  data-aos="fade-right"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-delay="1500"
+                  data-aos-duration="2000"
+                  data-aos-offset="200"
+                  className="pb-4 py-md-4  pe-xl-5"
+                >
                   <h2 className="common_heading mb-0 mt-5 mt-lg-0">
                     Global IoT connectivity to deploy and scale your solutions
                   </h2>

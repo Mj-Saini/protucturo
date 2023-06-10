@@ -8,8 +8,13 @@ import vector2 from "../assets/img/svg/header-vector2.svg";
 
 function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [color, setColor] = useState(0);
+
   const onActive = (e) => {
     setActiveSlide(e);
+  };
+  const chagneColor = (e) => {
+    setColor(e);
   };
 
   const settingSlide = {
@@ -92,7 +97,13 @@ function Hero() {
         <div className="container position-relative d-flex flex-column flex-grow-1 justify-content-xxl-around justify-content-center">
           <div className="row mt-xl-5">
             <div className="col-xl-7">
-              <div>
+              <div
+                data-aos="fade-right"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="2000"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+              >
                 <h1
                   style={{ letterSpacing: " -0.04em" }}
                   className="ff_gilroy-semibold fs_8x5l text_light_gray mb-0"
@@ -118,7 +129,14 @@ function Hero() {
           <div className="row justify-content-center">
             {" "}
             <div className="col-md-6 col-lg-5 col-12 z_index5 mobile_slider mt-5 mt-xl-0 mt-xl-0">
-              <div className="mobile_header z_index_5 d-flex justify-content-end flex-column align-items-center text-center position-relative">
+              <div
+                data-aos="fade-left"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="2000"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+                className="mobile_header z_index_5 d-flex justify-content-end flex-column align-items-center text-center position-relative"
+              >
                 <img className="mobile_size" src={mobileImg} alt="img" />
                 <Slider
                   ref={myBtn}
@@ -233,7 +251,14 @@ function Hero() {
               </div>
             </div>
           </div>{" "}
-          <div className="mt-lg-5 mt-4 py-lg-5">
+          <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="2500"
+            data-aos-duration="1000"
+            data-aos-offset="0"
+            className="mt-lg-5 mt-4 py-lg-5"
+          >
             {" "}
             <span className="d-flex gap-3 justify-content-center justify-content-xl-start pb-3">
               <img
@@ -258,13 +283,20 @@ function Hero() {
               <div className="d-flex justify-content-center justify-content-lg-start d-flex justify-content-center bg-transparent justify-content-lg-start ">
                 <div
                   className={`d-flex flex-column text-centerpx-4 position-relative py-4 px-4 slider_red_cards ${
-                    activeSlide === 0 ? "slider_red_card" : "slider_red_cards"
+                    activeSlide === 0
+                      ? "slider_red_card text-white"
+                      : "slider_red_cards"
                   }`}
                   onClick={() => onActive(0)}
                 >
                   <h3
-                    style={{ letterSpacing: "-0.02em" }}
-                    className=" ff_gilroy-semibold fs_2xl text-white"
+                    onClick={() => chagneColor(0)}
+                    style={{
+                      letterSpacing: "-0.02em",
+                    }}
+                    className={`ff_gilroy-semibold fs_2xl text_white_gray ${
+                      color ? "" : "text-white"
+                    }`}
                   >
                     Secure <span className="d-block">payments</span>
                   </h3>
@@ -284,7 +316,7 @@ function Hero() {
                 >
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
-                    className=" ff_gilroy-semibold fs_2xl text-white"
+                    className=" ff_gilroy-semibold fs_2xl text_white_gray"
                   >
                     Operational <span className="d-block">securities</span>
                   </h3>
@@ -305,7 +337,7 @@ function Hero() {
                   {" "}
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
-                    className=" ff_gilroy-semibold fs_2xl text-white"
+                    className=" ff_gilroy-semibold fs_2xl text_white_gray"
                   >
                     Secure data <span className="d-block">networks</span>
                   </h3>
@@ -326,7 +358,7 @@ function Hero() {
                   {" "}
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
-                    className=" ff_gilroy-semibold fs_2xl text-white"
+                    className=" ff_gilroy-semibold fs_2xl text_white_gray"
                   >
                     Encrypted <span className="d-block">transactions</span>
                   </h3>
@@ -347,7 +379,7 @@ function Hero() {
                   {" "}
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
-                    className=" ff_gilroy-semibold fs_2xl text-white"
+                    className=" ff_gilroy-semibold fs_2xl text_white_gray"
                   >
                     Secure <span className="d-block">payments</span>
                   </h3>
@@ -368,7 +400,7 @@ function Hero() {
                   {" "}
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
-                    className=" ff_gilroy-semibold fs_2xl text-white"
+                    className=" ff_gilroy-semibold fs_2xl text_white_gray"
                   >
                     Secure data <span className="d-block">networks</span>
                   </h3>
@@ -389,7 +421,7 @@ function Hero() {
                   {" "}
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
-                    className=" ff_gilroy-semibold fs_2xl text-white"
+                    className=" ff_gilroy-semibold fs_2xl text_white_gray"
                   >
                     Secure <span className="d-block">payments</span>
                   </h3>
@@ -410,7 +442,7 @@ function Hero() {
                   {" "}
                   <h3
                     style={{ letterSpacing: "-0.02em" }}
-                    className=" ff_gilroy-semibold fs_2xl text-white"
+                    className=" ff_gilroy-semibold fs_2xl text_white_gray"
                   >
                     Secure data <span className="d-block">networks</span>
                   </h3>

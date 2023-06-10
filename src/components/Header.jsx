@@ -10,7 +10,14 @@ function Header() {
   }
   return (
     <section id="Header">
-      <nav className=" z_index5 position-relative">
+      <nav
+        data-aos="fade-down"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="1500"
+        data-aos-duration="1000"
+        data-aos-offset="0"
+        className=" z_index5 position-relative"
+      >
         <div className="container pt-3 z-3">
           <div className="d-flex justify-content-between align-items-center pt-sm-4 py-3">
             <ul className="mb-0 p-0">

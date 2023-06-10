@@ -13,7 +13,14 @@ function Product() {
         <div className="container py-lg-5 my-lg-5">
           <div className="row justify-content-center">
             <div className="col-lg-6 ">
-              <div className="d-flex flex-column justify-content-center h-100">
+              <div
+                data-aos="fade-right"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="800"
+                data-aos-duration="2000"
+                data-aos-offset="100"
+                className="d-flex flex-column justify-content-center h-100"
+              >
                 <p className=" ff_gilroy-bold fs_2x4l text_gradient_red">
                   Our product benefits
                 </p>
@@ -27,7 +34,14 @@ function Product() {
                   together.
                 </p>
                 <div className="row justify-content-between">
-                  <div className="col-md-5 mt-md-5 mt-4">
+                  <div
+                    data-aos="fade-in"
+                    data-aos-easing="ease-in-out"
+                    data-aos-delay="1500"
+                    data-aos-duration="1500"
+                    data-aos-offset="100"
+                    className="col-md-5 mt-md-5 mt-4"
+                  >
                     <span>
                       <img src={web} alt="icon" />
                     </span>
@@ -39,7 +53,14 @@ function Product() {
                       bills.
                     </p>
                   </div>
-                  <div className="col-md-5 mt-md-5 mt-4">
+                  <div
+                    data-aos="fade-in"
+                    data-aos-easing="ease-in-out"
+                    data-aos-delay="800"
+                    data-aos-duration="2500"
+                    data-aos-offset="100"
+                    className="col-md-5 mt-md-5 mt-4"
+                  >
                     <span>
                       <img src={detect} alt="icon" />
                     </span>
@@ -51,7 +72,14 @@ function Product() {
                       everywhere.
                     </p>
                   </div>
-                  <div className="col-md-5 mt-md-5 mt-4">
+                  <div
+                    data-aos="fade-in"
+                    data-aos-easing="ease-in-out"
+                    data-aos-delay="800"
+                    data-aos-duration="1500"
+                    data-aos-offset="100"
+                    className="col-md-5 mt-md-5 mt-4"
+                  >
                     <span>
                       <img src={security} alt="icon" />
                     </span>
@@ -62,7 +90,14 @@ function Product() {
                       Purchase and install your eSIM in just one minute.
                     </p>
                   </div>
-                  <div className="col-md-5 mt-md-5 mt-4">
+                  <div
+                    data-aos="fade-in"
+                    data-aos-easing="ease-in-out"
+                    data-aos-delay="800"
+                    data-aos-duration="1500"
+                    data-aos-offset="100"
+                    className="col-md-5 mt-md-5 mt-4"
+                  >
                     <span>
                       <img src={unlimeted} alt="icon" />
                     </span>
@@ -77,7 +112,14 @@ function Product() {
               </div>
             </div>
             <div className="col-lg-6 col-sm-9 ps-lg-4 mt-4 mt-lg-0">
-              <div className="position-relative">
+              <div
+                data-aos="fade-left"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+                data-aos-offset="100"
+                className="position-relative"
+              >
                 <img
                   className="position-absolute dots d-none d-md-flex"
                   src={dots}

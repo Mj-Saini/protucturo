@@ -4,15 +4,24 @@ import logo from "../assets/img/svg/logo.svg";
 function Footer() {
   return (
     <>
-      <section id="footer" className="pt-5 position-relative overflow-hidden">
+      <section
+        id="footer"
+        className="pt-5 pb-4 pb-md-0 position-relative overflow-hidden"
+      >
         <span className="red_shadow position-absolute top-100 start-0 translate-middle ms-5 z_index0"></span>
         <span className="red_shadow position-absolute bottom-100 start-100 translate-middle-x mb-5 ms-5 z_index0"></span>
 
         <div className="container py-md-5 z_index2 position-relative">
           <div className="row">
             <div className="col-lg-4">
-              <div>
-                <a href="#">
+              <div
+                data-aos="fade-up-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-delay="1500"
+                data-aos-duration="2000"
+                data-aos-offset="200"
+              >
+                <a href="#Header">
                   <img className="logo_size" src={logo} alt="img" />
                 </a>
                 <p className=" ff_gilroy-medium fs_md text_gray mb-0 mt-4">
@@ -119,7 +128,14 @@ function Footer() {
             </div>
             <div className="col-lg-8 ps-lg-5 mt-5 mt-lg-0">
               <div className="row justify-content-between">
-                <div className="col-sm-3 col-6">
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-delay="1500"
+                  data-aos-duration="2000"
+                  data-aos-offset="200"
+                  className="col-sm-3 col-6"
+                >
                   <h2 className=" ff_gilroy-bold fs_2x4l text-white">
                     Products
                   </h2>
@@ -150,7 +166,14 @@ function Footer() {
                     </span>
                   </div>
                 </div>
-                <div className="col-sm-3 col-5">
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-delay="1500"
+                  data-aos-duration="2000"
+                  data-aos-offset="200"
+                  className="col-sm-3 col-5"
+                >
                   <h2 className=" ff_gilroy-bold fs_2x4l text-white">
                     Company
                   </h2>
@@ -197,7 +220,14 @@ function Footer() {
                     </span>
                   </div>
                 </div>
-                <div className="col-sm-3 col-6 mt-4 mt-sm-0">
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-delay="1500"
+                  data-aos-duration="2000"
+                  data-aos-offset="200"
+                  className="col-sm-3 col-6 mt-4 mt-sm-0"
+                >
                   <h2 className=" ff_gilroy-bold fs_2x4l text-white">
                     Resources
                   </h2>
@@ -245,7 +275,14 @@ function Footer() {
                     </span>
                   </div>
                 </div>
-                <div className="col-sm-3 col-5 mt-4 mt-sm-0">
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-delay="1500"
+                  data-aos-duration="2000"
+                  data-aos-offset="200"
+                  className="col-sm-3 col-5 mt-4 mt-sm-0"
+                >
                   <h2 className=" ff_gilroy-bold fs_2x4l text-white">
                     My Account
                   </h2>
@@ -388,7 +425,14 @@ function Footer() {
                 </svg>
               </a>
             </span>
-            <div className="d-flex flex-column flex-md-row justify-content-between mt-md-5 mt-4">
+            <div
+              data-aos="fade-up-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-delay="1500"
+              data-aos-duration="2000"
+              data-aos-offset="200"
+              className="d-flex flex-column flex-md-row justify-content-between mt-md-5 mt-4"
+            >
               <span>
                 <a href="#" className=" ff_gilroy-medium fs_md text_gray mb-0 ">
                   © 2022 Protecturo, All rights reserved.{" "}

@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -17,8 +19,12 @@ import CyberSefaty from "./components/CyberSefaty";
 import Solution from "./components/Solution";
 import Loader from "./components/Loader";
 import BackTop from "./components/BackTop";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
     <div className="bg-black overflow-hidden">
       <Loader />

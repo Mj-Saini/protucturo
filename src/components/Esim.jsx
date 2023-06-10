@@ -21,12 +21,19 @@ function Esim() {
         <div className="container z_index1 position-relative">
           <div className="row flex-column-reverse flex-lg-row justify-content-lg-between justify-content-center align-items-center z_index1 position-relative">
             <div className="col-lg-5 col-sm-8 mt-4 mt-lg-0 pe-xl-4">
-              <div className="mobile_header position-relative z_index_5 pe-lg-5 d-flex justify-content-end flex-column align-items-center text-center position-relative">
-                <img className="w-100" src={mobileImg} alt="img" />
+              <div
+                data-aos="fade-right"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="800"
+                data-aos-duration="2000"
+                data-aos-offset="200"
+                className="mobile_header position-relative z_index_5 pe-lg-5 d-flex justify-content-end flex-column align-items-center text-center position-relative"
+              >
+                <img className="w_sm_100 w-50" src={mobileImg} alt="img" />
 
-                <div className="d-flex flex-column justify-content-center  pe-lg-5 text-center z_index1 position-absolute w-100 h-100 top-0 start-0">
+                <div className="d-flex flex-column justify-content-center pe-lg-5 text-center z_index1 position-absolute w-100 h-100 top-0 start-0">
                   <div className="mt-5">
-                    <img className="w-50" src={scanner} alt="img" />
+                    <img className="w-25 w_sm_50" src={scanner} alt="img" />
                     <h4
                       style={{ letterSpacing: "-0.03em" }}
                       className=" ff_gilroy-semibold fs_2x4l mt-5 text-white text-center mb-4"
@@ -39,7 +46,14 @@ function Esim() {
               </div>
             </div>
             <div className="col-lg-7">
-              <div className="d-flex flex-column justify-content-center h-100">
+              <div
+                data-aos="fade-left"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="800"
+                data-aos-duration="2000"
+                data-aos-offset="200"
+                className="d-flex flex-column justify-content-center h-100"
+              >
                 <p className=" ff_gilroy-bold fs_2x4l text_gradient_red">
                   How it works
                 </p>

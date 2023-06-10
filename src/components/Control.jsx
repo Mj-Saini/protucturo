@@ -27,7 +27,14 @@ function Control() {
         <div className="container py-lg-5 z_index1 position-relative">
           <div className="row flex-column-reverse flex-lg-row justify-content-lg-between justify-content-center align-items-center z_index1 position-relative">
             <div className="col-lg-5 pe-lg-5 col-sm-8 mt-md-5 mt-4 mt-lg-0">
-              <div className="mobile_header z_index_5 d-flex justify-content-end flex-column align-items-center text-center position-relative pe-lg-4">
+              <div
+                data-aos="fade-right"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+                data-aos-offset="100"
+                className="mobile_header z_index_5 d-flex justify-content-end flex-column align-items-center text-center position-relative pe-lg-4"
+              >
                 <img className="w-100" src={mobileImg} alt="img" />
                 <Slider
                   ref={myBtn}
@@ -239,7 +246,14 @@ function Control() {
               </div>
             </div>
             <div className="col-lg-7">
-              <div className="d-flex flex-column justify-content-center h-100">
+              <div
+                data-aos="fade-left"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+                data-aos-offset="100"
+                className="d-flex flex-column justify-content-center h-100"
+              >
                 <p className=" ff_gilroy-bold fs_2x4l text_gradient_red">
                   Our benefits
                 </p>

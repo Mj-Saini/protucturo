@@ -23,14 +23,13 @@ const BackTop = () => {
         style={{ zIndex: "99" }}
         className={
           backToTop
-            ? "btn d-block position-fixed end-0 bottom-0 mb-3 me-2 bg_gradient_btn p-0 py-3 px-1 rounded-5 w_30"
+            ? "btn d-block position-fixed end-0 bottom-0 mb-3 me-2 bg_gradient_btn p-0 px-1 rounded-5 w_30"
             : "d-none"
         }
       >
-        <span className="btop_btn bg_red">
-          {" "}
-          <img className=" gotop" src={topimg} alt="topimg" />
-        </span>
+        <div className="move_btn btop_btn bg_red">
+          <img className="gotop" src={topimg} alt="topimg" />
+        </div>
       </span>
     </div>
   );

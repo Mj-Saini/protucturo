@@ -87,7 +87,8 @@
 .slider_red_cards {
   width: 209px;
   height: 186px;
-  background-color: var(--bg-dark);
+  color: #a6a6a6 !important;
+  background-color: var(--bg-dark) !important;
   box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
@@ -95,12 +96,15 @@
   width: 209px;
   height: 186px;
   background: linear-gradient(44.01deg, #d41700 -6.45%, #7f0011 136.55%);
-
   box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
+
 .slider_red_cards:hover {
   background: linear-gradient(44.01deg, #d41700 -6.45%, #7f0011 136.55%);
+}
+.slider_red_cards:hover h3 {
+  color: #ffffff !important;
 }
 .mobile_header .slick-dots li button:before {
   position: absolute;
@@ -228,15 +232,17 @@
 }
 
 #FAQ .accordion-button:not(.collapsed) {
+  padding: 0 24px !important;
+
   color: white !important;
   background-color: #841002 !important;
-  box-shadow: 0px 4px 100px rgba(191, 48, 48, 0.5) !important;
 }
 
 #FAQ .accordion {
   --bs-accordion-bg: #841002 !important;
   --bs-accordion-border-color: transparent !important;
   --bs-accordion-border-width: 0px !important;
+  --bs-accordion-btn-padding-y: 0rem !important;
   --bs-accordion-border-radius: 12px !important;
   --bs-accordion-inner-border-radius: 12px !important;
   --bs-accordion-btn-icon: url(./assets/img/svg/plus.svg);
@@ -254,6 +260,11 @@
   border: 0px solid #232323 !important;
   border-radius: 12px !important;
   padding: 0px !important;
+}
+.accordion-body {
+  padding: 0 24px 15px 24px !important;
+  margin-top: -10px !important;
+  box-shadow: 0px 4px 100px rgba(191, 48, 48, 0.5) !important;
 }
 #FAQ h2 {
   border-radius: 12px;
@@ -300,7 +311,7 @@ div.bg_black:hover .overlay_on_cards {
   fill: #ffffff;
 }
 .w_costom {
-  width: 45%;
+  width: 100%;
 }
 .secure_data_shadow {
   right: -35%;
@@ -316,6 +327,12 @@ div.bg_black:hover .overlay_on_cards {
   }
   .w_costom {
     all: unset;
+  }
+  .w_sm_100 {
+    width: 100% !important;
+  }
+  .w_sm_50 {
+    width: 50% !important;
   }
 }
 @media (min-width: 767.99px) {
@@ -417,6 +434,11 @@ div.bg_black:hover .overlay_on_cards {
     height: 757px;
   }
 }
+@media (min-width: 2000px) {
+  .min_vh_100 {
+    all: unset;
+  }
+}
 
 /* Loader */
 .Loader {
@@ -467,17 +489,22 @@ div.bg_black:hover .overlay_on_cards {
   width: 50px;
 }
 .btop_btn {
-  width: 100px;
-  height: 100px !important;
+  width: 45px;
+  height: 45px !important;
   border-radius: 50px;
-  padding: 18px 6px 25px 6px;
-  animation: Bounce 2s ease-in-out 0.5s infinite alternate-reverse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.move_btn {
+  animation: Bounce 1.5s ease-in-out infinite alternate-reverse;
+}
+
 @keyframes Bounce {
   0% {
-    transform: translateY(0);
+    transform: translatey(0);
   }
   100% {
-    transform: translateY(10px);
+    transform: translatey(10px);
   }
 }

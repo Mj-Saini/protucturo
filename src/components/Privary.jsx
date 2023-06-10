@@ -11,7 +11,14 @@ function Privacy() {
       >
         <span className="red_rectangle position-absolute z_index0 d-none d-sm-flex"></span>
         <div className=" container z_index1 position-relative">
-          <div className="col-xxl-7 col-md-9 mb-md-5 mb-4">
+          <div
+            data-aos="fade-down"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            data-aos-offset="100"
+            className="col-xxl-7 col-md-9 mb-md-5 mb-4"
+          >
             <h4 className=" text_gradient_red ff_gilroy-bold fs_2x4l">
               Our standards
             </h4>
@@ -21,10 +28,24 @@ function Privacy() {
             </h2>
           </div>
           <div className="row justify-content-between">
-            <div className="col-lg-6 col-sm-9  pe-xxl-4 ">
+            <div
+              data-aos="fade-right"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              data-aos-offset="100"
+              className="col-lg-6 col-sm-9  pe-xxl-4 "
+            >
               <img className="w-100" src={standerd} alt="" />
             </div>
-            <div className="col-lg-6 position-relative ps-lg-4">
+            <div
+              data-aos="fade-left"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              data-aos-offset="100"
+              className="col-lg-6 position-relative ps-lg-4"
+            >
               <img
                 src={dots}
                 alt=""
